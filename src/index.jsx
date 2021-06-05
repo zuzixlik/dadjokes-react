@@ -7,7 +7,7 @@ import './style.css';
 const AppContent = () => {
   return (
     <>
-      <div>
+      <div className="container">
         {jokes.map((jk) => (
           <Joke
             key={jk.id}

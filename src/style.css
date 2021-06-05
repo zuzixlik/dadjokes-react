@@ -6,4 +6,8 @@ html {
   font-family: sans-serif;
 }
 
-
+/*dle puvodniho zadani stylovalo celou stranku, ukol byl prepsat stranku stejne, takze v takovem pripade je potreba, jinak by prvni joke zacinal uplne nahore bez odsazeni a nebylo by zarovnano na stred, ale to by uz nevypadalo jako zadani-vzorova stranka*/
+.container {
+  max-width: 30rem;
+  margin: 5rem auto;
+}
