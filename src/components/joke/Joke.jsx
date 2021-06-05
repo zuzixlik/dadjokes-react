@@ -8,7 +8,7 @@ export const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
   return (
     <>
       <div className="container">
-        <div className="joke">
+        <div className={`joke ${likeDwn > likeUP ? 'joke--not-funny' : ' '}`}>
           <div className="joke__body">
             <div className="joke__user">
               <img className="user-avatar" src={userAvatar} />
@@ -30,7 +30,7 @@ export const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
             <button
               id="btn-down"
               className="btn-like btn-like--down"
-              onClick={() => setlikeDwn(likeDwn - 1)}
+              onClick={() => setlikeDwn(likeDwn + 1)}
             ></button>
             <span id="likes-down" className="likes-count likes-count--down">
               {likeDwn}
