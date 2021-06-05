@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Joke } from './img/Joke/Joke';
+import { Joke } from './components/joke/Joke';
 import { jokes } from './jokes.js';
 import './style.css';
 
